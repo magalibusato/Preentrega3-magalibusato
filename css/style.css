@@ -1,0 +1,211 @@
+.conteiner
+{
+    display: grid;
+    grid-template-rows: 15% 10% 30% 30% 15%;
+
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #dacac3;
+    color: rgb(190, 124, 124);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: rgb(148, 101, 101);
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ad8383;
+}
+
+.homelogo
+{
+    display: grid;   
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.nb
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;   
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #dacaca;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.card
+{
+    text-align: unset;
+    border: 3px;
+    padding: 10px;
+}
+
+h1
+{
+    text-align: center;
+    width: 50%;  
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(194, 130, 130);
+    font-size: xx-large; 
+}
+
+p
+{
+    text-align: center;
+   width: 50%;  
+   height: 100px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+form
+{
+    text-align: center;
+}
+
+.enviar
+{
+    margin: 20px;
+    padding: 10 30 10 30;
+}
+
+select
+{
+    width: 150px;
+}
+
+footer
+{
+    background-color: rgb(194, 130, 130);
+    align-items: center;
+    color: #ffff;
+    padding: 20px;
+}
+
+h2
+{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* Figma Styles of your File */
+:root {
+    /* Colors */
+    --primary: #0c54c0;
+    --secondary: #f5f3f3;
+    --thre: #383939;
+  
+    /* Fonts */
+    /* Effects */
+  }
+
+  .organismo,
+.organismo * {
+  box-sizing: border-box;
+}
+.organismo {
+  background: var(--primary, #0c54c0);
+  border-radius: 4px;
+  padding: 14px 40px 14px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.atomo-text-registrarse {
+  flex-shrink: 0;
+  width: 90px;
+  height: 22px;
+  position: relative;
+}
+.atomo-text-registrarse2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "SfUiText-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  font-weight: 700;
+  position: absolute;
+  right: 1.11%;
+  left: 0%;
+  width: 98.89%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.encabezado
+{
+    display: grid;   
+    grid-template-rows: 40px 1400px;
+    align-items: center;
+}
+ 
+.navbarcito
+{
+    display: grid;
+    grid-template-columns: 1fr;   
+    grid-template-rows: 20px 1400px;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #dacaca;
+
+}
+

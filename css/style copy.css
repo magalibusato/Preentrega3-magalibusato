@@ -1,0 +1,268 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+.montserrat-body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100%;
+    font-style: normal;
+  }
+
+
+body
+{
+    margin: 0;
+    height: 100%;
+   
+}
+
+header 
+{
+    text-align: center; 
+    margin-bottom: 0px; 
+}
+
+.logo 
+{
+    display: block; 
+    margin: 0 auto; 
+}
+
+.conteiner
+{
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    height: 100vh; 
+
+}
+
+/* navbar */
+.navbar 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffd0da;
+    color: #e38ba1;
+    width: 100%
+}
+.custom-navbar {
+    background-color: #ffd0da; /* Color de fondo personalizado */
+}
+.nav-links {
+    list-style: none; /* Eliminar puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+.nav-links li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+.nav-links a {
+    text-decoration: none;
+    color: rgb(102, 58, 58);
+}
+
+.nav-item
+{
+    margin: 0 25px;
+}
+
+
+
+.nav-links a:hover 
+{
+    background-color: #960f3c;
+}
+
+/* navbar */
+
+/* banner*/
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    height: 500px; 
+    background-image: url(../image/Sin\ título-1_Mesa\ de\ trabajo\ 1.png); 
+    color: rgb(148, 104, 104);
+}
+
+.text-side 
+{
+    flex: 60%;
+    padding-right: 50px;
+
+}
+
+.image-side 
+{
+    flex: 40%; /* Toma el 50% del espacio disponible */
+    display: flex; /* Usar Flexbox dentro de la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    height: auto;
+    padding: 100px;
+}
+
+.btn
+{
+    background-color: rgb(227, 139, 161);
+    border: none;
+    color: #ffffff;
+}
+
+.image-side img 
+{
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        height: auto; /* Altura automática */
+        padding: 20px;
+    }
+    .image-side
+    {
+        height: auto;
+        padding: 0;
+
+    }
+
+    .text-side {
+        margin-top: 50px;
+        text-align: center; /* Centra el texto */
+}
+}
+/* banner*/
+
+/*bannerdos*/
+.bannerdos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    height: 500px;   
+    color: rgb(148, 104, 104);
+}
+
+.text-dos 
+{
+    flex: 50%;
+    padding: 50px;
+
+}
+
+.image-dos 
+{
+    flex: 50%; /* Toma el 50% del espacio disponible */
+    display: flex; /* Usar Flexbox dentro de la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    height: auto;
+    padding: 50px;
+}
+
+.btn
+{
+    background-color: rgb(227, 139, 161);
+    border: none;
+    color: #ffffff;
+}
+
+.image-side img 
+{
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .bannerdos {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        height: auto; /* Altura automática */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .image-dos
+    {
+        height: auto;
+        padding: 0;
+
+    }
+
+    .text-dos {
+        text-align: center; /* Centra el texto */
+}
+}
+/*bannerdos*/
+
+/* cards */
+
+.cards
+{
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+.cards
+{
+    padding: 40px;
+}
+ }
+
+/* cards */
+
+/*diy*/
+.diy
+{
+    padding: 100px;
+}
+h1
+{
+    color: #e38ba1;
+}
+h2 {
+    color: #e38ba1;
+
+}
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+.conclusion {
+    font-style: italic;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ecf0f1;
+}
+/*diy*/
+
+/* footer */
+footer
+{
+    background-color: #ffd0da;
+    color: btn;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.lista-footer
+{
+    list-style-type: none;
+}
+.links-footer
+{
+    text-decoration: none;
+    color: rgb(102, 58, 58);
+}
+
+/* footer */
