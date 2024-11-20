@@ -81,65 +81,80 @@ header
 /* navbar */
 
 /* banner*/
+/* Estilos para el banner */
+/* Estilos para el banner */
 .banner {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
     padding: 100px;
-    height: 500px; 
+    height: auto; 
     background-image: url(../image/Sin\ título-1_Mesa\ de\ trabajo\ 1.png); 
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
     color: rgb(148, 104, 104);
 }
 
-.text-side 
-{
-    flex: 60%;
+/* Contenedor de texto */
+.text-side {
+    flex: 1; /* Utiliza el espacio disponible */
     padding-right: 50px;
-
+    text-align: left;
 }
 
-.image-side 
-{
-    flex: 40%; /* Toma el 50% del espacio disponible */
-    display: flex; /* Usar Flexbox dentro de la imagen */
+/* Contenedor de la imagen */
+.image-side {
+    flex: 1; /* Utiliza el espacio disponible */
+    display: flex;
     justify-content: center; /* Centra la imagen horizontalmente */
     align-items: center; /* Centra la imagen verticalmente */
     height: auto;
     padding: 100px;
 }
 
-.btn
-{
+/* Estilo para el botón */
+.btn {
     background-color: rgb(227, 139, 161);
     border: none;
     color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.image-side img 
-{
+/* Imagen dentro de .image-side */
+.image-side img {
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la relación de aspecto */
 }
 
-/* Estilos responsivos */
+/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
     .banner {
         flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-        height: auto; /* Altura automática */
-        padding: 20px;
+        padding: 20px; /* Reduce el padding en móviles */
+        width: 100%; /* Asegura que el banner ocupe todo el ancho disponible */
+        
     }
-    .image-side
-    {
-        height: auto;
-        padding: 0;
 
+    .image-side {
+        padding: 0; /* Elimina el padding de la imagen en pantallas pequeñas */
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+        
     }
 
     .text-side {
-        margin-top: 50px;
+        margin-top: 20px; /* Añade espacio entre el texto y la imagen */
         text-align: center; /* Centra el texto */
+        padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+    }
+
+    .btn {
+        padding: 12px 25px; /* Ajusta el tamaño del botón para pantallas pequeñas */
+        font-size: 18px; /* Aumenta el tamaño del texto del botón */
+    }
 }
-}
+
 /* banner*/
 
 /*bannerdos*/
@@ -199,10 +214,51 @@ header
 
     .text-dos {
         text-align: center; /* Centra el texto */
+        max-width: 300px;
 }
 }
-/*bannerdos*/
 
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .bannerdos {
+        flex-direction: column; /* Cambia la dirección del contenido a columna en pantallas pequeñas */
+        height: auto; /* Altura automática */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .image-dos {
+        padding: 0; /* Elimina el padding de la imagen en pantallas pequeñas */
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .text-dos {
+        text-align: center; /* Centra el texto */
+        max-width: 300px; /* Limita el ancho máximo del contenedor de texto */
+        margin: 0 auto; /* Centra el contenedor de texto */
+        padding: 20px; /* Ajusta el padding */
+    }
+}
+
+/*bannerdos*/
+.titulo
+{
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center;     /* Centra la imagen verticalmente */
+    height: auto;            /* Permite que la altura sea automática según la imagen */
+    padding: 50px;
+}
+@media (max-width: 768px) {
+.titulodestacados
+{
+ 
+       width: 400px;
+       padding: 10px;
+
+}
+}
 /* cards */
 
 .cards
@@ -242,8 +298,27 @@ ul {
     margin-top: 20px;
     padding: 10px;
     background-color: #ecf0f1;
+
 }
+@media (max-width: 768px) {
+    .diy
+    {
+           padding: 35px;
+    
+    }
+     }
 /*diy*/
+
+/*Contacto*/
+@media (max-width: 768px) {
+    #contacto
+    {
+        margin-top: none;
+           padding: 35px;
+    
+    }
+}
+/*Contacto*/
 
 /* footer */
 footer

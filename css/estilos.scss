@@ -1,15 +1,7 @@
-$color-principal: #ffd0da;
-$color-secundario: #e38ba1;
+@import 'variables';
+@import 'index';
+@import 'piñatas';
+@import 'eventos';
+@import 'diy';
+@import 'contacto';
 
-*
-{
-    padding: 0%;
-    margin: 0%;
-}
-
-.montserrat-body {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100%;
-    font-style: normal;
-  }
