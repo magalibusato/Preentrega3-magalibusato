@@ -1,0 +1,44 @@
+.conteiner-contacto
+{
+    display: grid;
+    grid-template-rows: auto;
+    
+}
+
+#contacto{
+    padding: 30px;
+    margin-bottom: 30px;
+    width: 600px;
+    align-content: normal;
+        h2
+        {
+            color: $color-secundario;
+        }
+        label
+        {
+            color:$color-terciario;
+        }
+        button
+        {
+            background-color: rgb(227, 139, 161); 
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: rgb(200, 100, 120); /* Nuevo color de fondo */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+        }
+}
+
+@media (max-width: 768px) {
+    #contacto
+    {
+        margin-top: none;
+           padding: 35px;
+    
+    }
+}
+

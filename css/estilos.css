@@ -1,68 +1,138 @@
 @charset "UTF-8";
-/* Estilos para el banner */
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.montserrat-body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100%;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+  height: 100vh;
+}
+
+/* navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #ffd0da;
+  color: #e38ba1;
+  width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.custom-navbar {
+  background-color: #ffd0da;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(102, 58, 58);
+}
+.nav-links a .nav-item {
+  margin: 0 25px;
+}
+.nav-links a .nav-links a:hover {
+  background-color: #960f3c;
+}
+
+footer {
+  background-color: #ffd0da;
+  color: btn;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+footer .lista-footer {
+  list-style-type: none;
+}
+footer .links-footer {
+  text-decoration: none;
+  color: rgb(102, 58, 58);
+}
+
 .banner {
   display: flex;
-  justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between;
+  align-items: center;
   padding: 100px;
-  height: auto;
+  height: 600px;
   background-image: url(../image/Sin\ título-1_Mesa\ de\ trabajo\ 1.png);
-  background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
-  background-position: center; /* Centra la imagen de fondo */
   color: rgb(148, 104, 104);
 }
-
-/* Contenedor de texto */
-.text-side {
-  flex: 1; /* Utiliza el espacio disponible */
+.banner .text-side {
+  flex: 60%;
   padding-right: 50px;
-  text-align: left;
 }
-
-/* Contenedor de la imagen */
-.image-side {
-  flex: 1; /* Utiliza el espacio disponible */
-  display: flex;
+.banner .image-side {
+  flex: 40%; /* Toma el 50% del espacio disponible */
+  display: flex; /* Usar Flexbox dentro de la imagen */
   justify-content: center; /* Centra la imagen horizontalmente */
   align-items: center; /* Centra la imagen verticalmente */
   height: auto;
-  padding: 100px;
+  padding: 20px;
 }
-
-/* Estilo para el botón */
-.btn {
+.banner .btn {
   background-color: rgb(227, 139, 161);
   border: none;
   color: #ffffff;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
 }
-
-/* Imagen dentro de .image-side */
-.image-side img {
+.banner .image-side img {
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
   height: auto; /* Mantiene la relación de aspecto */
 }
 
-/* Estilos responsivos para pantallas pequeñas */
+/* Estilos responsivos */
 @media (max-width: 768px) {
   .banner {
     flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-    padding: 20px; /* Reduce el padding en móviles */
+    height: auto; /* Altura automática */
+    padding: 20px;
   }
   .image-side {
-    padding: 20px; /* Ajusta el padding de la imagen */
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho en pantallas pequeñas */
+    height: auto;
+    padding: 0;
   }
   .text-side {
-    margin-top: 20px; /* Añade espacio entre el texto y la imagen */
+    margin-top: 50px;
     text-align: center; /* Centra el texto */
-    padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
-  }
-  .btn {
-    padding: 12px 25px; /* Ajusta el tamaño del botón para pantallas pequeñas */
-    font-size: 18px; /* Aumenta el tamaño del texto del botón */
   }
 }
 .bannerdos {
@@ -73,13 +143,7 @@
   height: 500px;
   color: rgb(148, 104, 104);
 }
-
-.text-dos {
-  flex: 50%;
-  padding: 50px;
-}
-
-.image-dos {
+.bannerdos .image-dos {
   flex: 50%; /* Toma el 50% del espacio disponible */
   display: flex; /* Usar Flexbox dentro de la imagen */
   justify-content: center; /* Centra la imagen horizontalmente */
@@ -87,14 +151,7 @@
   height: auto;
   padding: 50px;
 }
-
-.btn {
-  background-color: rgb(227, 139, 161);
-  border: none;
-  color: #ffffff;
-}
-
-.image-side img {
+.bannerdos .image-side img {
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
   height: auto; /* Mantiene la relación de aspecto */
 }
@@ -111,12 +168,21 @@
     height: auto;
     padding: 0;
   }
-  .text-dos {
-    text-align: center; /* Centra el texto */
-  }
 }
 .cards {
   padding: 20px;
+}
+.cards a {
+  background-color: rgb(227, 139, 161);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cards a:hover {
+  background-color: rgb(200, 100, 120); /* Nuevo color de fondo */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
 }
 
 @media (max-width: 768px) {
@@ -124,28 +190,82 @@
     padding: 40px;
   }
 }
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo img {
+  max-width: 80%;
+  height: auto;
+  transition: max-width 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .imagen-container img {
+    max-width: 60%;
+  }
+}
 .diy {
   padding: 100px;
 }
-
-h1 {
+.diy h1 {
   color: #e38ba1;
 }
-
-h2 {
+.diy h2 {
   color: #e38ba1;
 }
-
-ul {
+.diy ul {
   margin: 10px 0;
   padding-left: 20px;
 }
-
-.conclusion {
+.diy .conclusion {
   font-style: italic;
   margin-top: 20px;
   padding: 10px;
   background-color: #ecf0f1;
+}
+
+@media (max-width: 768px) {
+  .diy {
+    padding: 35px;
+  }
+}
+.conteiner-contacto {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+#contacto {
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 600px;
+  align-content: normal;
+}
+#contacto h2 {
+  color: #e38ba1;
+}
+#contacto label {
+  color: rgb(148, 104, 104);
+}
+#contacto button {
+  background-color: rgb(227, 139, 161);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#contacto button:hover {
+  background-color: rgb(200, 100, 120); /* Nuevo color de fondo */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+}
+
+@media (max-width: 768px) {
+  #contacto {
+    margin-top: none;
+    padding: 35px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

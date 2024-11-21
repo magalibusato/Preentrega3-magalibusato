@@ -1,73 +1,64 @@
-/* Estilos para el banner */
 .banner {
     display: flex;
-    justify-content: center; /* Centra horizontalmente los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between;
+    align-items: center;
     padding: 100px;
-    height: auto; 
+    height: 600px; 
     background-image: url(../image/Sin\ título-1_Mesa\ de\ trabajo\ 1.png); 
-    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
-    background-position: center; /* Centra la imagen de fondo */
     color: rgb(148, 104, 104);
+
+            .text-side 
+        {
+            flex: 60%;
+            padding-right: 50px;
+
+        }
+
+        .image-side 
+        {
+            flex: 40%; /* Toma el 50% del espacio disponible */
+            display: flex; /* Usar Flexbox dentro de la imagen */
+            justify-content: center; /* Centra la imagen horizontalmente */
+            align-items: center; /* Centra la imagen verticalmente */
+            height: auto;
+            padding: 20px;
+        }
+
+        .btn
+        {
+            background-color: rgb(227, 139, 161);
+            border: none;
+            color: #ffffff;
+        }
+
+        .image-side img 
+        {
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+        }
+
 }
 
-/* Contenedor de texto */
-.text-side {
-    flex: 1; /* Utiliza el espacio disponible */
-    padding-right: 50px;
-    text-align: left;
-}
 
-/* Contenedor de la imagen */
-.image-side {
-    flex: 1; /* Utiliza el espacio disponible */
-    display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
-    height: auto;
-    padding: 100px;
-}
-
-/* Estilo para el botón */
-.btn {
-    background-color: rgb(227, 139, 161);
-    border: none;
-    color: #ffffff;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Imagen dentro de .image-side */
-.image-side img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: auto; /* Mantiene la relación de aspecto */
-}
-
-/* Estilos responsivos para pantallas pequeñas */
+/* Estilos responsivos */
 @media (max-width: 768px) {
     .banner {
         flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-        padding: 20px; /* Reduce el padding en móviles */
+        height: auto; /* Altura automática */
+        padding: 20px;
     }
+    .image-side
+    {
+        height: auto;
+        padding: 0;
 
-    .image-side {
-        padding: 20px; /* Ajusta el padding de la imagen */
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho en pantallas pequeñas */
     }
 
     .text-side {
-        margin-top: 20px; /* Añade espacio entre el texto y la imagen */
+        margin-top: 50px;
         text-align: center; /* Centra el texto */
-        padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
-    }
-
-    .btn {
-        padding: 12px 25px; /* Ajusta el tamaño del botón para pantallas pequeñas */
-        font-size: 18px; /* Aumenta el tamaño del texto del botón */
-    }
 }
-
+}
 
 .bannerdos {
     display: flex;
@@ -76,37 +67,25 @@
     padding: 100px;
     height: 500px;   
     color: rgb(148, 104, 104);
+
+
+        .image-dos 
+        {
+            flex: 50%; /* Toma el 50% del espacio disponible */
+            display: flex; /* Usar Flexbox dentro de la imagen */
+            justify-content: center; /* Centra la imagen horizontalmente */
+            align-items: center; /* Centra la imagen verticalmente */
+            height: auto;
+            padding: 50px;
+        }
+
+        .image-side img 
+        {
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+        }
 }
 
-.text-dos 
-{
-    flex: 50%;
-    padding: 50px;
-
-}
-
-.image-dos 
-{
-    flex: 50%; /* Toma el 50% del espacio disponible */
-    display: flex; /* Usar Flexbox dentro de la imagen */
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
-    height: auto;
-    padding: 50px;
-}
-
-.btn
-{
-    background-color: rgb(227, 139, 161);
-    border: none;
-    color: #ffffff;
-}
-
-.image-side img 
-{
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: auto; /* Mantiene la relación de aspecto */
-}
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
@@ -123,14 +102,25 @@
 
     }
 
-    .text-dos {
-        text-align: center; /* Centra el texto */
-}
 }
 
 .cards
 {
     padding: 20px;
+
+        a
+        {
+            background-color: rgb(227, 139, 161); 
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        a:hover {
+            background-color: rgb(200, 100, 120); /* Nuevo color de fondo */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+        }
 }
 
 
@@ -140,3 +130,24 @@
     padding: 40px;
 }
  }
+
+
+.titulo {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    
+
+        img {
+            max-width: 80%;           
+            height: auto;             
+            transition: max-width 0.3s ease; 
+        }
+    }
+
+@media (max-width: 768px) {
+    .imagen-container img {
+        max-width: 60%;       
+    }
+}
+
