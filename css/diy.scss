@@ -1,6 +1,6 @@
 .diy
 {
-    padding: 100px;
+    padding: 10%;
     h1
     {
         color: #e38ba1;
@@ -11,21 +11,26 @@
     }
     ul 
     {
-        margin: 10px 0;
-        padding-left: 20px;
+        margin: 5% 0;
+        padding-left: 10%;
     }
     .conclusion 
     {
         font-style: italic;
-        margin-top: 20px;
-        padding: 10px;
+        margin-top: 10%;
+        padding: 5%;
         background-color: #ecf0f1;
+    } 
+    .imgdiy
+    {
+        width: 90%;
     }
 }
 @media (max-width: 768px) {
     .diy
     {
-           padding: 35px;
+           padding: 10%;
     
     }
+   
      }

@@ -1,27 +1,29 @@
+
 .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
-    height: 600px; 
-    background-image: url(../image/Sin\ título-1_Mesa\ de\ trabajo\ 1.png); 
+    
+    height: auto; 
+    background-image: url(../image/fondo3.png); 
+    
     color: rgb(148, 104, 104);
-
+    position: relative; /* Asegúrate de que la posición sea adecuada */
             .text-side 
         {
-            flex: 60%;
-            padding-right: 50px;
+            flex: 50%;
+            
 
         }
-
+        
         .image-side 
         {
-            flex: 40%; /* Toma el 50% del espacio disponible */
+            flex: 50%; /* Toma el 50% del espacio disponible */
             display: flex; /* Usar Flexbox dentro de la imagen */
             justify-content: center; /* Centra la imagen horizontalmente */
             align-items: center; /* Centra la imagen verticalmente */
             height: auto;
-            padding: 20px;
+            padding: 3%;
         }
 
         .btn
@@ -36,7 +38,10 @@
             max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
             height: auto; /* Mantiene la relación de aspecto */
         }
-
+        .content {
+        
+            padding: 5%;
+    }
 }
 
 
@@ -45,44 +50,78 @@
     .banner {
         flex-direction: column; /* Cambia a columna en pantallas pequeñas */
         height: auto; /* Altura automática */
-        padding: 20px;
+        width: 100%;
+        
     }
     .image-side
     {
+        width: 90%;
         height: auto;
-        padding: 0;
+   
 
     }
 
     .text-side {
-        margin-top: 50px;
+        width: 90%;
+        margin-top: 10%;
         text-align: center; /* Centra el texto */
 }
+.content {
+        width: 90%;
+        margin-top: 10%;
+        padding: 5%;
 }
+}
+
+
 
 .bannerdos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
-    height: 500px;   
+
+    height: auto;   
+    padding: 5%;
     color: rgb(148, 104, 104);
-
-
-        .image-dos 
+    
+       
+        .imagen 
         {
             flex: 50%; /* Toma el 50% del espacio disponible */
             display: flex; /* Usar Flexbox dentro de la imagen */
             justify-content: center; /* Centra la imagen horizontalmente */
             align-items: center; /* Centra la imagen verticalmente */
-            height: auto;
-            padding: 50px;
+            height: 100%;
+           
         }
 
         .image-side img 
         {
             max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
             height: auto; /* Mantiene la relación de aspecto */
+        }
+
+        .content
+    {
+        align-self: auto;
+        flex: 50%;
+        width: 90%;
+       
+        
+    }
+    a
+        {
+            background-color: rgb(227, 139, 161); 
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        a:hover {
+            background-color: rgb(200, 100, 120); /* Nuevo color de fondo */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+            color: #ffffff;
         }
 }
 
@@ -92,22 +131,26 @@
     .bannerdos {
         flex-direction: column; /* Cambia a columna en pantallas pequeñas */
         height: auto; /* Altura automática */
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 100%;
+       
+        margin-right: 10%;
     }
+   
     .image-dos
     {
+        width: 90%;
         height: auto;
-        padding: 0;
+   
 
     }
+
+    
 
 }
 
 .cards
 {
-    padding: 20px;
-
+    padding-bottom: 5%;
         a
         {
             background-color: rgb(227, 139, 161); 
@@ -127,7 +170,7 @@
 @media (max-width: 768px) {
 .cards
 {
-    padding: 40px;
+    padding: 10%;
 }
  }
 

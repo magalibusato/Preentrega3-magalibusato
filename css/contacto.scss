@@ -6,11 +6,12 @@
 }
 
 #contacto{
-    padding: 30px;
-    margin-bottom: 30px;
-    width: 600px;
+    padding: 5%;
+    
+    width: 90%;
     align-content: normal;
-        h2
+        
+    h2
         {
             color: $color-secundario;
         }
@@ -36,8 +37,9 @@
 @media (max-width: 768px) {
     #contacto
     {
+        
         margin-top: none;
-           padding: 35px;
+           padding: 10%;
     
     }
 }
