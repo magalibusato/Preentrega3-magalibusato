@@ -4,14 +4,16 @@
     h1
     {
         color: #e38ba1;
+        padding: 2%;
     }
     h2 
     {
         color: #e38ba1;
+        padding: 2%;
     }
     ul 
     {
-        margin: 5% 0;
+     
         padding-left: 10%;
     }
     .conclusion 
@@ -19,7 +21,7 @@
         font-style: italic;
         margin-top: 10%;
         padding: 5%;
-        background-color: #ecf0f1;
+        background-color: $color-principal;
     } 
     .imgdiy
     {

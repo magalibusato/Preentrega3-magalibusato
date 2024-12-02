@@ -90,6 +90,10 @@ footer .links-footer {
   color: rgb(102, 58, 58);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .banner {
   display: flex;
   justify-content: space-between;
@@ -238,19 +242,20 @@ footer .links-footer {
 }
 .diy h1 {
   color: #e38ba1;
+  padding: 2%;
 }
 .diy h2 {
   color: #e38ba1;
+  padding: 2%;
 }
 .diy ul {
-  margin: 5% 0;
   padding-left: 10%;
 }
 .diy .conclusion {
   font-style: italic;
   margin-top: 10%;
   padding: 5%;
-  background-color: #ecf0f1;
+  background-color: #ffd0da;
 }
 .diy .imgdiy {
   width: 90%;

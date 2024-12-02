@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 .banner {
     display: flex;
     justify-content: space-between;
@@ -193,4 +195,3 @@
         max-width: 60%;       
     }
 }
-
