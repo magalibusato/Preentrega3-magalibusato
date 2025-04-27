@@ -193,6 +193,7 @@ html{
 
 @media (max-width: 768px) {
     .imagen-container img {
+        height: auto;
         max-width: 60%;       
     }
 }

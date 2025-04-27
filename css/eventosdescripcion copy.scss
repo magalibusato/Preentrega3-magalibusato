@@ -1,0 +1,439 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: auto; 
+    background-image: url(../image/fondo3.png); 
+    
+    color: rgb(148, 104, 104);
+    position: relative; /* Asegúrate de que la posición sea adecuada */
+            .text-side 
+        {
+            flex: 50%;
+            
+
+        }
+        
+        .image-side 
+        {
+            flex: 50%; /* Toma el 50% del espacio disponible */
+            display: flex; /* Usar Flexbox dentro de la imagen */
+            justify-content: center; /* Centra la imagen horizontalmente */
+            align-items: center; /* Centra la imagen verticalmente */
+            height: auto;
+            padding: 3%;
+        }
+
+        .btn
+        {
+            background-color: rgb(227, 139, 161);
+            border: none;
+            color: #ffffff;
+        }
+
+        .image-side img 
+        {
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+        }
+        .content {
+        
+            padding: 5%;
+    }
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        height: auto; /* Altura automática */
+        width: 100%;
+        
+    }
+    .image-side
+    {
+        width: 90%;
+        height: auto;
+   
+
+    }
+
+    .text-side {
+        width: 90%;
+        margin-top: 10%;
+        text-align: center; /* Centra el texto */
+}
+.content {
+        width: 90%;
+        margin-top: 10%;
+        padding: 5%;
+}
+}
+
+
+
+.bannerdos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;   
+    padding: 5%;
+    color: rgb(148, 104, 104);
+
+        .descripcion
+        {
+            flex-basis: 50%;
+
+            padding: 3%;
+            
+        }
+        .precio {
+            font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+            color: $color-terciario;   /* Color rojo para resaltar */
+            font-weight: bold; /* Hacer el texto en negrita */
+          }
+          
+        .carru
+        {
+    
+            flex-basis: 50%;
+            max-width: 100%;  /* Asegura que el contenedor no sea más grande que el 100% del ancho disponible */
+             max-height: 500px; /* Limita la altura máxima del contenedor del carrusel */
+            overflow: hidden;  /* Oculta cualquier contenido que se salga del contenedor */
+        }
+       
+        .imagen 
+        {
+            
+            
+            justify-content: center; /* Centra la imagen horizontalmente */
+            align-items: center; /* Centra la imagen verticalmente */
+            height: auto;
+           
+        }
+
+        .image-side img 
+        {
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+        }
+
+        .content
+    {
+        align-self: auto;
+        flex-basis: 50%;
+        width: 90%;
+       
+        
+    }
+    a
+        {
+            background-color: rgb(227, 139, 161); 
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        a:hover {
+            background-color: rgb(200, 100, 120); /* Nuevo color de fondo */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+            color: #ffffff;
+        }
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        height: auto; /* Altura automática */
+        width: 100%;
+        
+    }
+    .carru
+    {
+        width: 90%;
+        height: auto;
+   
+
+    }
+
+    .descripcion {
+        width: 90%;
+        margin-top: 10%;
+        text-align: center; /* Centra el texto */
+        
+}
+.content {
+        width: 90%;
+        margin-top: 10%;
+        padding: 5%;
+}
+}
+
+
+
+.bannerdos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: auto;   
+    padding: 5%;
+    color: rgb(148, 104, 104);
+    
+       
+        .imagen 
+        {
+            flex: 50%; /* Toma el 50% del espacio disponible */
+            display: flex; /* Usar Flexbox dentro de la imagen */
+            justify-content: center; /* Centra la imagen horizontalmente */
+            align-items: center; /* Centra la imagen verticalmente */
+            height: 100%;
+           
+        }
+
+        .carru 
+        {
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+        }
+
+        .descripcion
+    {
+        align-self: auto;
+        flex-basis: 50%;
+        width: 90%;
+       
+        
+          
+        
+    }
+    a
+        {
+            background-color: rgb(227, 139, 161); 
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        a:hover {
+            background-color: rgb(200, 100, 120); /* Nuevo color de fondo */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+            color: #ffffff;
+        }
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .bannerdos {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        height: auto; /* Altura automática */
+        width: 100%;
+       
+        margin-right: 10%;
+    }
+   
+    .image-dos
+    {
+        width: 90%;
+        height: auto;
+   
+
+    }
+
+    
+
+}
+
+
+.medidas
+{
+    padding-left: 5%;
+    padding-right:5%;
+    
+}
+@media (max-width: 480px) {
+
+    .medidas .titulo   {
+        width: 90%;
+        height: auto;
+   
+
+    }
+
+    
+
+}
+
+/* Estilo para el contenedor que usa Flexbox */
+.contenedor {
+    display: flex;
+    justify-content: space-between;  /* Espaciado uniforme entre los items */
+   
+    gap: 20px;                       /* Espacio entre los items */
+    flex-wrap: wrap;                 /* Permite que los elementos se ajusten a la siguiente fila en pantallas pequeñas */
+    padding: 0% 5% 5% 5%;
+
+            /* Estilo para cada item */
+        .item {
+            width: 22%;                      /* Cada item ocupará el 22% del ancho del contenedor */
+            text-align: center;              /* Centra el texto y la imagen dentro de cada item */
+            padding: 10px;
+            box-sizing: border-box;          /* Asegura que el padding no afecte el ancho */
+        }
+
+        .item img {
+            width: 100%;                     /* La imagen ocupará el 100% del ancho del item */
+            height: auto;                    /* Mantiene la relación de aspecto de la imagen */
+            border-radius: 8px;              /* Bordes redondeados para las imágenes */
+        }
+
+        /* Estilo para la descripción */
+        .item p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    
+
+    .item {
+    
+        width: 48%;                  /* Los items ocuparán el 48% en pantallas más pequeñas */
+    }
+}
+
+/* Media query para pantallas extra pequeñas (móviles en modo vertical) */
+@media (max-width: 480px) {
+    .contenedor
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+
+        width: 100%;                 /* Los items ocuparán el 100% en pantallas móviles */
+        padding: 5px;                /* Reducir padding en móviles para más espacio */
+    }
+
+    .item p {
+        font-size: 14px;             /* Reducir el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+
+.cards {
+    padding-bottom: 5%;
+    
+    a {
+      background-color: rgb(227, 139, 161);
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: inline-block; /* Asegura que el enlace se comporte como un bloque */
+      padding: 10px 20px; /* Espaciado interno del botón */
+      text-align: center; /* Centra el texto del botón */
+      border-radius: 5px; /* Bordes redondeados para el botón */
+    }
+  
+    a:hover {
+      background-color: rgb(200, 100, 120); /* Nuevo color de fondo */
+      transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+    }
+  }
+  
+  /* Responsividad para pantallas pequeñas (por debajo de 768px) */
+  @media (max-width: 768px) {
+    .cards {
+      padding: 5%; /* Ajustamos el padding para que la tarjeta no ocupe todo el espacio */
+      
+      /* Establecemos un máximo de ancho para las tarjetas */
+      width: 90%; /* Asegura que las tarjetas no se estiren demasiado */
+      margin: 0 auto; /* Centra las tarjetas */
+    }
+  
+    a {
+      font-size: 14px; /* Reducimos el tamaño del texto del botón en pantallas pequeñas */
+      padding: 8px 16px; /* Ajustamos el padding para que el botón no sea tan grande */
+    }
+  }
+  
+
+
+.titulo {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    
+
+        img {
+            max-width: 80%;           
+            height: auto;             
+            transition: max-width 0.3s ease; 
+        }
+    }
+
+@media (max-width: 768px) {
+    .imagen-container img {
+        max-width: 60%;       
+    }
+}
+.medidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  
+    .imagen-contenedor {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  
+    /* Responsividad */
+    @media (max-width: 1200px) {
+      .imagen-contenedor {
+        width: 80%;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .imagen-contenedor {
+        width: 90%;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .medidas {
+        padding: 2%; /* Aumento del padding en pantallas móviles */
+      }
+  
+      .imagen-contenedor {
+        width: 100%;
+      }
+    }
+  }
+  
