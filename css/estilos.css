@@ -492,7 +492,7 @@ html {
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
-  .item {
+  .contenedor .item {
     width: 48%; /* Los items ocuparán el 48% en pantallas más pequeñas */
   }
 }
@@ -501,10 +501,11 @@ html {
   .contenedor {
     flex-direction: column;
     align-items: center;
+    padding: 2px;
   }
   .item {
     width: 100%; /* Los items ocuparán el 100% en pantallas móviles */
-    padding: 5px; /* Reducir padding en móviles para más espacio */
+    padding: 2px; /* Reducir padding en móviles para más espacio */
   }
   .item p {
     font-size: 14px; /* Reducir el tamaño de fuente en pantallas pequeñas */
